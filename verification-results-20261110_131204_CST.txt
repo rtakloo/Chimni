@@ -1,0 +1,58 @@
+Independent reconstruction; Python standard library; integer arithmetic only.
+Membership engine: truncated-polynomial row products + exact triangular division.
+Larger finite counts use exact linear lifting, independently derived from these products.
+PASS modular linear solver versus brute force: 400 systems; p=2,3; exponents=1,2; 3 variables
+Suite solver completed in 0.082 seconds
+PASS raw row-HNF enumeration: n,p,max_m= 3 2 8
+PASS raw row-HNF enumeration: n,p,max_m= 3 3 5
+PASS raw row-HNF enumeration: n,p,max_m= 3 5 4
+PASS raw row-HNF enumeration: n,p,max_m= 4 2 5
+PASS raw row-HNF enumeration: n,p,max_m= 4 3 3
+PASS raw row-HNF enumeration: n,p,max_m= 5 2 3
+PASS raw row-HNF enumeration: n,p,max_m= 5 3 2
+Raw matrices tested: 10218 ; closed lattices checked: 610
+PASS displayed cubic/quartic/quintic closure conditions on all raw matrices; explicit cotype weights versus generic integer minors on all closed matrices in these ranges
+Suite raw completed in 0.071 seconds
+PASS cubic full cotype via integer minors: p,max_m= 2 10 lattices= 413
+PASS cubic full cotype via integer minors: p,max_m= 3 7 lattices= 314
+PASS cubic full cotype via integer minors: p,max_m= 5 5 lattices= 226
+Suite cubic completed in 0.01 seconds
+PASS quartic row-product linear lifting: p,max_m= 2 9 total= [1, 1, 7, 19, 59, 107, 427, 619, 2091, 4011] cyclic= [1, 1, 4, 8, 16, 32, 128, 128, 512, 1024]
+PASS quartic row-product linear lifting: p,max_m= 3 7 total= [1, 1, 13, 49, 238, 562, 3235, 7609] cyclic= [1, 1, 9, 27, 135, 243, 1215, 3645]
+PASS quartic row-product linear lifting: p,max_m= 5 6 total= [1, 1, 31, 181, 1556, 5306, 58431] cyclic= [1, 1, 25, 125, 1125, 3125, 28125]
+PASS quintic row-product linear lifting: p,max_m= 2 6 total= [1, 1, 7, 27, 115, 323, 1411] cyclic= [1, 1, 4, 8, 32, 32, 128]
+PASS quintic row-product linear lifting: p,max_m= 3 6 total= [1, 1, 13, 76, 589, 2371, 21325] cyclic= [1, 1, 9, 27, 243, 243, 2187]
+PASS quintic row-product linear lifting: p,max_m= 5 6 total= [1, 1, 31, 306, 5431, 46681, 815431] cyclic= [1, 1, 25, 125, 3125, 15625, 78125]
+Suite coefficients completed in 2.118 seconds
+PASS exceptional diagonals from row products: p= 2 number= 8 counts= [4, 8, 32, 32, 256, 128, 1024, 4096]
+PASS exceptional diagonals from row products: p= 3 number= 8 counts= [9, 27, 243, 243, 6561, 2187, 59049, 531441]
+PASS exceptional diagonals from row products: p= 5 number= 8 counts= [25, 125, 3125, 15625, 390625, 78125, 9765625, 244140625]
+PASS exceptional diagonals from row products: p= 11 number= 7 counts= [121, 1331, 161051, 3382071, 214358881, 19487171, 25937424601]
+Suite exceptional completed in 0.608 seconds
+PASS diagonal family via row products: p,k=0.. 2 5 counts= [1, 32, 4096, 131072, 16777216, 536870912]
+PASS diagonal family via row products: p,k=0.. 3 3 counts= [1, 243, 531441, 129140163]
+PASS diagonal family via row products: p,k=0.. 5 2 counts= [1, 15625, 244140625]
+PASS diagonal family via row products: p,k=0.. 11 1 counts= [1, 3382071]
+PASS direct quadratic-pair enumeration and case formulas: p,k=0.. 2 8
+PASS direct quadratic-pair enumeration and case formulas: p,k=0.. 3 5
+PASS direct quadratic-pair enumeration and case formulas: p,k=0.. 5 4
+PASS direct quadratic-pair enumeration and case formulas: p,k=0.. 11 3
+Suite family completed in 1.887 seconds
+PASS full normalized-character product checks versus universal recurrence: p= 2 n=4..8; m<=2 plus p=2,n<=6,m=3
+PASS full normalized-character product checks versus universal recurrence: p= 3 n=4..8; m<=2 plus p=2,n<=6,m=3
+PASS full normalized-character product checks versus universal recurrence: p= 5 n=4..8; m<=2 plus p=2,n<=6,m=3
+Normalized characters tested directly: 21089
+PASS recurrence-derived character product checks: p,max_m= 2 7 n=4..10
+PASS recurrence-derived character product checks: p,max_m= 3 5 n=4..10
+PASS recurrence-derived character product checks: p,max_m= 5 4 n=4..10
+Recurrence-pair checks: 203826
+PASS quintic characters reduced by unit scaling: p,m=1.. 2 9 counts= [1, 4, 8, 32, 32, 128, 256, 1024, 1024]
+PASS quintic characters reduced by unit scaling: p,m=1.. 3 7 counts= [1, 9, 27, 243, 243, 2187, 6561]
+PASS quintic characters reduced by unit scaling: p,m=1.. 5 6 counts= [1, 25, 125, 3125, 15625, 78125]
+PASS quintic characters reduced by unit scaling: p,m=1.. 11 5 counts= [1, 121, 1331, 161051, 3382071]
+Suite universal completed in 5.772 seconds
+PASS finite E comparison m=1..16; m<=10 rows= [(1, 1, 0, '1'), (2, 3, 1, '1'), (3, 6, 1, '4/3'), (4, 11, 1, '5/4'), (5, 17, 1, '7/5'), (6, 27, 2, '4/3'), (7, 35, 0, '10/7'), (8, 50, 1, '11/8'), (9, 64, 0, '13/9'), (10, 87, 1, '7/5')]
+PASS m=11..16 counts= [108, 136, 165, 202, 242, 290] max E= [15, 16, 18, 19, 21, 22]
+Suite comparison completed in 0.006 seconds
+ALL REQUESTED CHECKS PASSED; elapsed seconds= 10.558
+LIMIT: finite checks neither prove unbounded coefficient identities nor analytic convergence/asymptotics.

@@ -1,0 +1,3 @@
+PASS exact polynomial identity: 11 rational summands, 10 distinct binomial factors
+PASS exact polynomial identity: 10 rational summands, 8 distinct binomial factors
+PASS finite diagonal comparison: [1, 3, 6, 11, 17, 27, 35, 50, 64, 87, 108, 136, 165, 202, 242, 290] [0, 2, 4, 5, 7, 8, 9, 11, 12, 14, 15, 16, 18, 19, 21, 22]
